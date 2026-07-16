@@ -102,7 +102,6 @@ jobs:
           kernel_repo: ${{ inputs.kernel_repo }}
           kernel_usage: ${{ inputs.kernel_usage }}
           armbian_fstype: ${{ inputs.armbian_fstype }}
-          gh_token: ${{ secrets.GH_TOKEN || github.token }}
 
       - name: Upload Rebuild image to Release
         uses: ncipollo/release-action@main
